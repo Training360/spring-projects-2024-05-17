@@ -1,0 +1,11 @@
+@startuml
+'https://plantuml.com/state-diagram
+
+hide empty description
+
+[*] --> ENROLLED
+ENROLLED --> COMPLETED: Complete
+ENROLLED --> REFUSED: Refuse
+COMPLETED --> [*]
+REFUSED --> [*]
+@enduml
